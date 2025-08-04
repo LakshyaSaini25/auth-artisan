@@ -46,9 +46,11 @@ All colors MUST be HSL.
 
     /* Professional gradients and effects */
     --gradient-primary: linear-gradient(135deg, hsl(252 81% 67%), hsl(252 81% 75%));
-    --gradient-background: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(240 15% 6%));
+    --gradient-background: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(240 15% 6%), hsl(252 81% 67% / 0.1));
+    --gradient-interactive: linear-gradient(45deg, hsl(252 81% 67% / 0.2), hsl(252 81% 75% / 0.1), hsl(240 10% 3.9%), hsl(252 81% 67% / 0.15));
     --glass-background: hsla(240, 10%, 8%, 0.7);
     --glass-border: hsla(252, 81%, 67%, 0.2);
+    --glass-interactive: hsla(252, 81%, 67%, 0.1);
     
     /* Shadows and animations */
     --shadow-glow: 0 0 40px hsla(252, 81%, 67%, 0.3);
