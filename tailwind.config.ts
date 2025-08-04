@@ -123,6 +123,44 @@ export default {
 						opacity: '1',
 						transform: 'scale(1.05)' 
 					}
+				},
+				'move-diagonal-1': {
+					'0%': { transform: 'translate(0, 0)' },
+					'25%': { transform: 'translate(100px, -50px)' },
+					'50%': { transform: 'translate(150px, 30px)' },
+					'75%': { transform: 'translate(50px, 80px)' },
+					'100%': { transform: 'translate(0, 0)' }
+				},
+				'move-diagonal-2': {
+					'0%': { transform: 'translate(0, 0)' },
+					'25%': { transform: 'translate(-80px, 60px)' },
+					'50%': { transform: 'translate(-120px, -40px)' },
+					'75%': { transform: 'translate(-30px, -90px)' },
+					'100%': { transform: 'translate(0, 0)' }
+				},
+				'move-circular': {
+					'0%': { transform: 'translate(0, 0) rotate(0deg)' },
+					'25%': { transform: 'translate(60px, -60px) rotate(90deg)' },
+					'50%': { transform: 'translate(0, -120px) rotate(180deg)' },
+					'75%': { transform: 'translate(-60px, -60px) rotate(270deg)' },
+					'100%': { transform: 'translate(0, 0) rotate(360deg)' }
+				},
+				'move-wave': {
+					'0%': { transform: 'translateX(0) translateY(0)' },
+					'25%': { transform: 'translateX(70px) translateY(-40px)' },
+					'50%': { transform: 'translateX(140px) translateY(0)' },
+					'75%': { transform: 'translateX(70px) translateY(40px)' },
+					'100%': { transform: 'translateX(0) translateY(0)' }
+				},
+				'icon-glow': {
+					'0%, 100%': { 
+						filter: 'drop-shadow(0 0 5px currentColor)',
+						opacity: '0.6' 
+					},
+					'50%': { 
+						filter: 'drop-shadow(0 0 15px currentColor)',
+						opacity: '1' 
+					}
 				}
 			},
 			animation: {
@@ -131,7 +169,12 @@ export default {
 				'float': 'float 6s ease-in-out infinite',
 				'glow': 'glow 2s ease-in-out infinite',
 				'gradient-shift': 'gradient-shift 8s ease-in-out infinite',
-				'pulse-glow': 'pulse-glow 4s ease-in-out infinite'
+				'pulse-glow': 'pulse-glow 4s ease-in-out infinite',
+				'move-diagonal-1': 'move-diagonal-1 12s ease-in-out infinite',
+				'move-diagonal-2': 'move-diagonal-2 14s ease-in-out infinite',
+				'move-circular': 'move-circular 16s ease-in-out infinite',
+				'move-wave': 'move-wave 10s ease-in-out infinite',
+				'icon-glow': 'icon-glow 1s ease-in-out infinite'
 			}
 		}
 	},

@@ -18,89 +18,101 @@ export function AuthPage() {
         <div className="absolute top-1/3 right-1/3 w-48 h-48 bg-primary/8 rounded-full blur-3xl animate-glow" style={{ animationDelay: "4s" }}></div>
       </div>
 
-      {/* Floating coding/study icons */}
+      {/* Floating coding/study icons with directional movement */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-5">
-        {/* Row 1 - Top level icons */}
+        {/* Top Row - Diagonal Movement */}
         <Code 
-          className="absolute top-[10%] left-[15%] text-primary/40 animate-float" 
-          size={32} 
-          style={{ animationDelay: "0s", animationDuration: "8s" }}
+          className="absolute top-[8%] left-[12%] text-primary/50 animate-move-diagonal-1 animate-icon-glow" 
+          size={28} 
+          style={{ animationDelay: "0s" }}
         />
         <BookOpen 
-          className="absolute top-[20%] right-[20%] text-primary-glow/35 animate-float" 
-          size={28} 
-          style={{ animationDelay: "1s", animationDuration: "10s" }}
+          className="absolute top-[18%] right-[15%] text-primary-glow/45 animate-move-wave animate-icon-glow" 
+          size={26} 
+          style={{ animationDelay: "2s" }}
         />
         <Laptop 
-          className="absolute top-[15%] left-[70%] text-primary/30 animate-float" 
+          className="absolute top-[12%] left-[65%] text-primary/40 animate-move-circular animate-icon-glow" 
           size={30} 
-          style={{ animationDelay: "2s", animationDuration: "9s" }}
+          style={{ animationDelay: "4s" }}
         />
         
-        {/* Row 2 - Mid level icons */}
+        {/* Upper Middle Row - Wave and Circular Movement */}
         <Brain 
-          className="absolute top-[40%] left-[10%] text-primary-glow/40 animate-float" 
-          size={26} 
-          style={{ animationDelay: "3s", animationDuration: "11s" }}
+          className="absolute top-[32%] left-[8%] text-primary-glow/50 animate-move-diagonal-2 animate-icon-glow" 
+          size={24} 
+          style={{ animationDelay: "1s" }}
         />
         <Terminal 
-          className="absolute top-[45%] right-[15%] text-primary/35 animate-float" 
-          size={24} 
-          style={{ animationDelay: "4s", animationDuration: "7s" }}
+          className="absolute top-[38%] right-[18%] text-primary/45 animate-move-wave animate-icon-glow" 
+          size={22} 
+          style={{ animationDelay: "3s" }}
         />
         <Lightbulb 
-          className="absolute top-[35%] left-[80%] text-primary-glow/30 animate-float" 
-          size={28} 
-          style={{ animationDelay: "5s", animationDuration: "12s" }}
+          className="absolute top-[28%] left-[75%] text-primary-glow/40 animate-move-diagonal-1 animate-icon-glow" 
+          size={26} 
+          style={{ animationDelay: "5s" }}
         />
         
-        {/* Row 3 - Bottom level icons */}
+        {/* Center Row - Mixed Movement Patterns */}
         <Github 
-          className="absolute bottom-[30%] left-[25%] text-primary/40 animate-float" 
-          size={30} 
-          style={{ animationDelay: "6s", animationDuration: "9s" }}
+          className="absolute top-[52%] left-[20%] text-primary/50 animate-move-circular animate-icon-glow" 
+          size={28} 
+          style={{ animationDelay: "6s" }}
         />
         <Monitor 
-          className="absolute bottom-[25%] right-[30%] text-primary-glow/35 animate-float" 
-          size={32} 
-          style={{ animationDelay: "7s", animationDuration: "10s" }}
+          className="absolute top-[48%] right-[25%] text-primary-glow/45 animate-move-diagonal-2 animate-icon-glow" 
+          size={30} 
+          style={{ animationDelay: "7s" }}
         />
         <Coffee 
-          className="absolute bottom-[20%] left-[75%] text-primary/30 animate-float" 
-          size={26} 
-          style={{ animationDelay: "8s", animationDuration: "8s" }}
-        />
-        <Zap 
-          className="absolute bottom-[15%] left-[60%] text-primary-glow/40 animate-float" 
+          className="absolute top-[58%] left-[70%] text-primary/40 animate-move-wave animate-icon-glow" 
           size={24} 
-          style={{ animationDelay: "9s", animationDuration: "11s" }}
+          style={{ animationDelay: "8s" }}
         />
         
-        {/* Additional scattered icons for continuous movement */}
+        {/* Lower Row - Advanced Movement */}
+        <Zap 
+          className="absolute bottom-[25%] left-[15%] text-primary-glow/50 animate-move-diagonal-1 animate-icon-glow" 
+          size={22} 
+          style={{ animationDelay: "9s" }}
+        />
         <Code 
-          className="absolute top-[60%] left-[5%] text-primary/25 animate-float" 
+          className="absolute bottom-[18%] right-[20%] text-primary/45 animate-move-circular animate-icon-glow" 
           size={20} 
-          style={{ animationDelay: "10s", animationDuration: "13s" }}
+          style={{ animationDelay: "10s" }}
         />
         <BookOpen 
-          className="absolute top-[70%] right-[10%] text-primary-glow/30 animate-float" 
-          size={22} 
-          style={{ animationDelay: "11s", animationDuration: "9s" }}
+          className="absolute bottom-[30%] left-[68%] text-primary-glow/40 animate-move-wave animate-icon-glow" 
+          size={24} 
+          style={{ animationDelay: "11s" }}
         />
+        
+        {/* Scattered Additional Icons for Continuous Movement */}
         <Brain 
-          className="absolute top-[25%] left-[45%] text-primary/20 animate-float" 
+          className="absolute top-[68%] left-[35%] text-primary/35 animate-move-diagonal-2 animate-icon-glow" 
           size={18} 
-          style={{ animationDelay: "12s", animationDuration: "14s" }}
+          style={{ animationDelay: "12s" }}
         />
         <Terminal 
-          className="absolute bottom-[40%] right-[5%] text-primary-glow/25 animate-float" 
+          className="absolute bottom-[45%] right-[8%] text-primary-glow/35 animate-move-diagonal-1 animate-icon-glow" 
           size={20} 
-          style={{ animationDelay: "13s", animationDuration: "8s" }}
+          style={{ animationDelay: "13s" }}
         />
         <Lightbulb 
-          className="absolute top-[80%] left-[40%] text-primary/35 animate-float" 
-          size={24} 
-          style={{ animationDelay: "14s", animationDuration: "10s" }}
+          className="absolute top-[78%] left-[42%] text-primary/40 animate-move-circular animate-icon-glow" 
+          size={22} 
+          style={{ animationDelay: "14s" }}
+        />
+        <Monitor 
+          className="absolute top-[22%] left-[45%] text-primary-glow/30 animate-move-wave animate-icon-glow" 
+          size={16} 
+          style={{ animationDelay: "15s" }}
+        />
+        <Github 
+          className="absolute bottom-[12%] left-[85%] text-primary/35 animate-move-diagonal-2 animate-icon-glow" 
+          size={18} 
+          style={{ animationDelay: "16s" }}
         />
       </div>
 
